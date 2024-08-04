@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div
+    each message in messages
+      p= message.user
+      p= message.text
+      p= message.added
+    else
+      p There are no messages
+  a(href="/new") 
+    button New message
