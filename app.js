@@ -36,6 +36,4 @@ app.use(function error(err, req, res, next) {
   res.render("error", { error: err });
 });
 
-app.listen(PORT, () =>
-  console.log(`My first Express app - listening on port ${PORT}!`)
-);
+module.exports = app;
